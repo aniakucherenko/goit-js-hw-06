@@ -7,15 +7,30 @@
 
 
 const categoriesNumber = document.querySelectorAll('li.item');
+
 console.log('Number of categories: ' + categoriesNumber.length);
 
-const categoriesName = document.querySelectorAll('li.item>h2');
-categoriesName.forEach(header => {
-console.log('Category: ' + header.textContent);
-const categoriesCount = header.querySelectorAll('ul li');
-console.log('Elements: ' + categoriesCount.length);
-});
+categoriesNumber.forEach((element) => {
+    console.log('Category: ' + `${element.firstElementChild.textContent}`);
+    console.log('Elements: ' + `${element.lastElementChild.children.length}`);
+   });
 
+
+
+
+
+
+
+
+
+
+//  const categoriesCount = header.children.length;
+// selector.forEach(item => {
+//     const categoryName = item.querySelector("h2").textContent;
+//     const counter = item.querySelectorAll("ul li").length;
+//     console.log(`Category: ${categoryName}`);
+//     console.log('Elements: ' + counter);
+// });
 
 
 
