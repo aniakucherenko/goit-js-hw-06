@@ -5,7 +5,7 @@
 // //  і кількість елементів в категорії (усіх <li>, вкладених в нього).
 
 
-
+ 
 const categoriesNumber = document.querySelectorAll('li.item');
 
 console.log('Number of categories: ' + categoriesNumber.length);

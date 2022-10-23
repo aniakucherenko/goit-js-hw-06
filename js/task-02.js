@@ -1,24 +1,40 @@
-const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
-];
-// const list = document.querySelector(".ingredients");
+// const ingredients = [
+//   'Potatoes',
+//   'Mushrooms',
+//   'Garlic',
+//   'Tomatos',
+//   'Herbs',
+//   'Condiments',
+// ];
+
 const elementOne = document.createElement("li");
 elementOne.textContent = 'Potatoes';
 elementOne.classList.add('item');
-console.log(elementOne);
+
 const elementTwo =document.createElement("li");
 elementTwo.textContent = 'Mushrooms';
 elementTwo.classList.add('item');
-console.log(elementTwo);
+
+const elementThree = document.createElement("li");
+elementThree.textContent = 'Garlic';
+elementThree.classList.add('item');
+
+const elementFour = document.createElement("li");
+elementFour.textContent = 'Tomatos';
+elementFour.classList.add('item');
+
+const elementFive = document.createElement("li");
+elementFive.textContent = 'Herbs';
+elementFive.classList.add('item');
+
+const elementSix = document.createElement("li");
+elementSix.textContent = 'Condiments';
+elementSix.classList.add('item');
 
 
+ingredients.append(elementOne, elementTwo, elementThree, elementFour, elementFive, elementSix);
+console.log(ingredients);
 
-// ul#ingredients.append(element, elementTwo);
 
 // Напиши скрипт, який для кожного елемента
 //  масиву ingredients:
