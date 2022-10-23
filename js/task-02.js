@@ -6,12 +6,19 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const element = document.createElement("li");
-element.textContent = 'Potatoes';
-console.log(element);
+// const list = document.querySelector(".ingredients");
+const elementOne = document.createElement("li");
+elementOne.textContent = 'Potatoes';
+elementOne.classList.add('item');
+console.log(elementOne);
 const elementTwo =document.createElement("li");
 elementTwo.textContent = 'Mushrooms';
+elementTwo.classList.add('item');
 console.log(elementTwo);
+
+
+
+// ul#ingredients.append(element, elementTwo);
 
 // Напиши скрипт, який для кожного елемента
 //  масиву ingredients:
