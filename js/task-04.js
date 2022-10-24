@@ -4,4 +4,18 @@
 //  або зменшуй значення лічильника.
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
-const counterValue = 
+const counterValue = {
+    count : 0,
+
+increment() {
+    this.count +=1;
+    return this;
+},
+
+decrement() {
+    this.count -=1;
+    return this;
+}
+}
+
+
