@@ -4,18 +4,22 @@
 //  або зменшуй значення лічильника.
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
-const counterValue = {
-    count : 0,
 
-increment() {
-    this.count +=1;
-    return this;
-},
+let counterValue = 0;
 
-decrement() {
-    this.count -=1;
-    return this;
-}
-}
+const incrementButton = document.querySelector('button[data-action="increment"]')
+incrementButton.addEventListener("click", () => {
+    counterValue +=1
+    value.textContent = counterValue;
+  });
+
+const decrementButton = document.querySelector('button[data-action="decrement"]')
+decrementButton.addEventListener("click", () => {
+    counterValue -=1
+    value.textContent = counterValue;
+  });
+
+let value = document.getElementById('value');
+
 
 
