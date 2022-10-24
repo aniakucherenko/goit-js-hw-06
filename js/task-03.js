@@ -25,9 +25,6 @@ const arr = images.map(image => {
 
 
 
-// const markup = images.map((image) => 'li.class='list-item new'>${image}</li>').join("");
-
-
 
 
 
