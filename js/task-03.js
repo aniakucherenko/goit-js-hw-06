@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const gallery = document.querySelector('.gallery');
-console.log(gallery);
+console.log(gallery); 
 
 const arr = images.map(image => {
   return `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
