@@ -30,3 +30,6 @@ button {
   flex-direction: column;
 }
  
+.gallery__img {
+  width: 500px;
+}
