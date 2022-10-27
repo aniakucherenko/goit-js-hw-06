@@ -16,7 +16,6 @@ const gallery = document.querySelector('.gallery');
 console.log(gallery); 
 gallery.classList.add('grid');
 
-
 const arr = images.map(image => {
   return `<li><img src="${image.url}" alt="${image.alt}"/></li>`;
 });
