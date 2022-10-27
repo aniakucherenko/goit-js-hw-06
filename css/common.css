@@ -23,16 +23,10 @@ button {
   cursor: pointer;
 }
 .gallery {
-  background-color: rgb(170, 201, 233);
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 auto;
- }
- 
- .grid {
-   margin-left: 40px;
-   margin-right: 40px;
-   list-style: none;
-  }
-
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+}
  
